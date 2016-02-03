@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160203130127) do
+ActiveRecord::Schema.define(version: 20160203151428) do
 
   create_table "mates", force: :cascade do |t|
     t.decimal  "alfa"
@@ -19,6 +19,7 @@ ActiveRecord::Schema.define(version: 20160203130127) do
     t.decimal  "gama"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "operacao"
   end
 
 end

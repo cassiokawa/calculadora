@@ -17,7 +17,7 @@ class MatesController < ApplicationController
     @mate = Mate.new
     @mate.alfa = 12
     @mate.beta = 35
-    
+
   end
 
   # GET /mates/1/edit
@@ -72,6 +72,6 @@ class MatesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mate_params
-      params.require(:mate).permit(:alfa, :beta, :gama)
+      params.require(:mate).permit(:alfa, :beta, :gama, :operacao)
     end
 end
